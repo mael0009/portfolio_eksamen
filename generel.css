@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "antic";
+  src: url(fonts/Antic_Slab/AnticSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: "junge";
+  src: url(fonts/Junge/Junge-Regular.ttf);
+}
+
+@font-face {
+  font-family: "open";
+  src: url(fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+.menu {
+  font-family: "open";
+}
+
+h1 {
+  font-family: "antic";
+}
