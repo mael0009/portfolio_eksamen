@@ -1,13 +1,4 @@
-/* BAGGRUNDSBILLEDE */
-.forside {
-  background-image: url(img/forside-grafik7.svg);
-  background-size: cover;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-/* HEADER */
+/*////////// HEADER FOR ALLE SIDER  //////////*/
 
 .menu {
   list-style: none;
@@ -36,4 +27,114 @@ nav a {
   transition: 0.3s ease;
 }
 
+/*////////////// SIDE - FORSIDE ////////////////*/
+
+/* BAGGRUNDSBILLEDE INDEX*/
+.forside {
+  background-image: url(img/forside-grafik7.svg);
+  background-size: cover; /*fylder hele baggrunden*/
+  margin: 0;
+  background-repeat: no-repeat; /*gentager ikke billedet*/
+  background-attachment: fixed;
+}
+
+/*//////////// SIDE - PROJEKTER ////////*/
+
+/* BAGGRUNDSBILLEDE PÅ PROJEKTER*/
+
+.forside2 {
+  background-image: url(img/baggrund-grafik8.svg);
+}
+
 /* MAIN */
+
+h1,
+h2 {
+  text-align: center; /* teksten står centreret */
+}
+
+/* PROJEKTER - BOX */
+
+.container {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap; /* så bokse der ikke kan være på en linje hopper ned */
+  gap: 10rem;
+  justify-content: center; /* sikrer centreret layout både vandret og lodret. */
+  align-items: center; /* sikrer centreret layout både vandret og lodret. */
+}
+
+.box {
+  width: 250px;
+  aspect-ratio: 16/ 16; /* bredte og højde ift. hinanden */
+  border-radius: 20px; /* afrundede hjørner */
+  background-color: white;
+  border: 2px solid #58320c; /* stroke-farve */
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  text-align: center; /* teksten står centreret */
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  transform: scale(1.03); /* boksen bliver større når hover */
+  color: #123fa2; /* teksten bliver blå når hover */
+}
+
+/* OM MIG - GRID */
+
+.mig {
+  height: auto;
+  max-width: 60ch;
+}
+
+.OM-tekst {
+  text-align: center;
+}
+.grid-1-2 {
+  margin-top: 5rem; /* giver luft mellem h2 og sektion */
+}
+
+/*//////////// SIDE - TEMA 2 - GRID /////////////*/
+
+hr {
+  color: #123fa2;
+}
+
+.t2-grid {
+  text-align: center;
+}
+
+.t2-cta {
+  text-align: center;
+}
+
+/* BESØG TEMA 2 KNAP*/
+a.t2-btn {
+  display: inline;
+  background-color: white;
+  border: 2px solid #58320c;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* BESØG TEMA 2 KNAP */
+a.t2-btn:hover {
+  color: #123fa2;
+}
+
+.t2-btn {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/*//////////// SIDE - TEMA 2 - CTA /////////////*/
+
+.a_tag-img {
+  max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
+  height: auto; /* bevarer billedets proportioner. */
+  margin-bottom: 2rem; /* giver plads mellem billede og knap */
+}

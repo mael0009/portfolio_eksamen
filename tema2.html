@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="generel.css" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io_tema6/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io_tema6/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io_tema6/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io_tema6/site.webmanifest" />
+
+    <title>Tema 2</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="index.html">FORSIDE</a>
+          </li>
+          <li>
+            <a href="projekter.html">PROJEKTER</a>
+          </li>
+          <li>
+            <a href="om-mig.html">OM MIG</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>TEMA 2</h1>
+      <hr />
+
+      <div class="t2-grid">
+        <p>
+          I tema 2 lærte vi om Grid i CSS, som er et værktøj til layout. <br />
+          Her brugte jeg grid til at placere mit indhold ud fra vores given Wireframe, så det endte med at se sådan ud.
+        </p>
+
+        <img src="img/grid-tema2.png" alt="grid" /> <br />
+        <p>
+          Her lavede jeg i mit Html dokument en section og gav den en “class” som jeg navngav “grid_2-1” <br />
+          - hvor tekst, knap og billede ligger i. I mit CSS dokument skrev jeg følgende: <br />
+          .grid_2-1 { <br />
+          display: grid; <br />
+          grid-template-columns: 2fr 1fr; <br />
+          grid-row: span 2; <br />
+          }
+        </p>
+      </div>
+
+      <br />
+      <!-- target="blank" gør så linket bliver åbnet i en ny fane-->
+      <div class="t2-btn">
+        <a class="t2-btn" href="http://manaronline.dk/tema2/website/Studiestart/index.html" target="_blank">BESØG TEMA 2 PROJEKT </a>
+      </div>
+
+      <hr />
+      <div class="t2-cta">
+        <p>
+          I tema 2 lærte vi om a-tag som CTA. a-tag er et et inline HTML-element der bliver brugt til at lave hyperlinks. Som standard er a-tags ikke stylet som knapper, <br />
+          derfor brugte jeg CSS til at få mit a-tag til at ligne og opfører sig som knapper, så det så ud på følgende måde: <br />
+          <br />
+          <img src="img/cta-knap-t2.png" alt="cta" />
+        </p>
+
+        <p>
+          Her lavede jeg i mit Html dokument et a-tag og satte den i samme "div" som mit "p". <br />
+          I mit CSS dokument stylede jeg a, a.btn og a:hover for at få knappen til at ligne og opfører sig som en knap, på følgende måde.
+        </p>
+
+        <img class="a_tag-img" src="img/a-tag_t2.png" alt="a_tag" />
+        <img class="a_tag-img" src="img/a-tag_t2-3.png" alt="a_tag3" />
+
+        <!-- target="blank" gør så linket bliver åbnet i en ny fane-->
+        <div class="t2-btn">
+          <a class="t2-btn" href="http://manaronline.dk/tema2/website/Studiestart/index.html" target="_blank">BESØG TEMA 2 PROJEKT </a>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
