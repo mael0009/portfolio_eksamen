@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="generel.css" />
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io_tema6/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io_tema6/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io_tema6/favicon-16x16.png" />
-    <link rel="manifest" href="favicon_io_tema6/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io-2_eksamen/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io-2_eksamen/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io-2_eksamen/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io-2_eksamen/site.webmanifest" />
 
     <title>Projekter</title>
   </head>
@@ -20,6 +20,7 @@
           <li>
             <a href="index.html">FORSIDE</a>
           </li>
+
           <li>
             <a href="projekter.html">PROJEKTER</a>
           </li>
@@ -32,22 +33,29 @@
 
     <main>
       <h1>PROJEKTER</h1>
-      <h2>Her er en samling af mine projekter fra 1.semester på</h2>
+
+      <h2>Her er en samling af mine projekter fra 1.semester på. Du kan ved at klikke ind på hvert tema, læse om min læring og se mine projekter</h2>
 
       <!-- BOX -->
       <section class="grid-1-1">
         <div class="container">
-          <div class="box"><a href="tema2.html">TEMA 2</a></div>
-          <div class="box">TEMA 3</div>
+          <div class="box"><a class="blå" href="tema2.html">TEMA 2</a></div>
+          <div class="box"><a class="blå" href="tema3.html">TEMA 3</a></div>
         </div>
 
         <div class="container">
-          <div class="box">TEMA 4</div>
-          <div class="box">TEMA 5</div>
+          <div class="box"><a class="blå" href="tema4.html">TEMA 4</a></div>
+          <div class="box"><a class="blå" href="tema5.html">TEMA 5</a></div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <!-- id="footer" giver muglighed for at hente footeren i JavaScript-->
+    <!-- id="hide" starter footeren som skjult via CSS (ingen visning og 0 i gennemsigtighed). -->
+    <footer id="footer" class="hide">
+      <p>Manar Jindawi</p>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

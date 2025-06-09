@@ -23,7 +23,8 @@ nav a {
 }
 
 .menu a:hover {
-  color: #123fa2;
+  color: white;
+  background-color: #58320c;
   transition: 0.3s ease;
 }
 
@@ -36,6 +37,27 @@ nav a {
   margin: 0;
   background-repeat: no-repeat; /*gentager ikke billedet*/
   background-attachment: fixed;
+}
+
+/* FORSIDE - FOOTER (javaScript)*/
+
+#myFooter {
+  position: fixed; /* footeren sidder fast i bunden af vinduet */
+  bottom: 0; /* footeren er helt nede i bunden af skærmen */
+  right: -100%; /* Starter skjult og kommer ind fra højre */
+  width: 100%; /* Den fylder hele bredden af skærmen */
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 15px 0; /* Lidt luft inde i boksen (top/bund) */
+  font-size: 20px; /* Skriftstørrelse */
+  transition: right 1s ease-in-out; /* gør så ændring i 'right' sker som en glidende animation over 1 sekund */
+  z-index: 100; /* sørger for at footeren ligger foran andet indhold */
+}
+
+span {
+  color: #123fa2; /*farven på mit navn i footeren*/
+  font-family: "antic";
 }
 
 /*//////////// SIDE - PROJEKTER ////////*/
@@ -70,25 +92,30 @@ h2 {
   border-radius: 20px; /* afrundede hjørner */
   background-color: white;
   border: 2px solid #58320c; /* stroke-farve */
-  transition: transform 0.3s ease;
   overflow: hidden;
   position: relative;
   display: flex;
   text-align: center; /* teksten står centreret */
   justify-content: center;
   align-items: center;
+  font-size: l; /* teksten bliver større*/
 }
 
 .box:hover {
   transform: scale(1.03); /* boksen bliver større når hover */
+  transition: transform 0.3s ease; /* gør at der er en smooth transition fra boksens originale form til at boksen bliver større */
+}
+
+a.blå:hover {
   color: #123fa2; /* teksten bliver blå når hover */
 }
 
-/* OM MIG - GRID */
+/* SIDE - OM MIG - GRID */
 
+/* PORTRÆT BILLEDE */
 .mig {
   height: auto;
-  max-width: 60ch;
+  max-width: 100%;
 }
 
 .OM-tekst {
@@ -96,20 +123,26 @@ h2 {
 }
 .grid-1-2 {
   margin-top: 5rem; /* giver luft mellem h2 og sektion */
+  background-color: white;
+  border: 2px solid #58320c;
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 /*//////////// SIDE - TEMA 2 - GRID /////////////*/
 
-hr {
-  color: #123fa2;
-}
-
 .t2-grid {
   text-align: center;
+  background-color: white;
+  border: 2px solid #58320c; /* giver en kant og stroke-farve */
+  border-radius: 5px; /* afrundede hjørner */
+  margin-bottom: 4rem; /* giver luft mellem denne og den næste sektion */
 }
 
-.t2-cta {
-  text-align: center;
+/* TEKST */
+.tekst {
+  display: block;
+  margin-bottom: 2rem; /* giver luft under tekst og imellem knap */
 }
 
 /* BESØG TEMA 2 KNAP*/
@@ -118,10 +151,8 @@ a.t2-btn {
   background-color: white;
   border: 2px solid #58320c;
   border-radius: 5px;
-  margin-top: 10px;
 }
 
-/* BESØG TEMA 2 KNAP */
 a.t2-btn:hover {
   color: #123fa2;
 }
@@ -131,10 +162,220 @@ a.t2-btn:hover {
   text-align: center;
 }
 
-/*//////////// SIDE - TEMA 2 - CTA /////////////*/
+/*//////////// SIDE - TEMA 2 - A-TAG CTA /////////////*/
+
+.t2-cta {
+  text-align: center;
+  background-color: white;
+  border: 2px solid #58320c; /* giver en kant og stroke-farve */
+  border-radius: 5px; /* afrundede hjørner */
+}
 
 .a_tag-img {
   max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
   height: auto; /* bevarer billedets proportioner. */
   margin-bottom: 2rem; /* giver plads mellem billede og knap */
+}
+
+/*//////////// SIDE - TEMA 3 - MOODBOARD /////////////*/
+
+/* TEKST OG BILLEDE MOODBOARD */
+.moodboard {
+  text-align: center;
+  background-color: white;
+  border: 2px solid #58320c; /* giver en kant og stroke-farve */
+  border-radius: 5px; /* afrundede hjørner */
+  margin-bottom: 4rem;
+}
+
+/* TEKST */
+.tekst {
+  display: block;
+  margin-bottom: 2rem; /* giver luft under tekst og imellem knap */
+}
+
+/* BESØG TEMA 3 KNAP */
+a.t3-btn {
+  display: inline;
+  background-color: white;
+  border: 2px solid #58320c;
+  border-radius: 5px;
+}
+
+a.t3-btn:hover {
+  color: #123fa2;
+}
+
+.t3-btn {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 4rem; /* luft mellem knap og tekst */
+}
+
+/*//////////// SIDE - TEMA 3 - FAVICON /////////////*/
+
+/* TEKST */
+.tekst {
+  display: block;
+  margin-bottom: 2rem; /* giver luft under tekst og imellem knap */
+}
+
+/* TEKST OG BILLEDE */
+.favicon {
+  text-align: center;
+  border: 2px solid #58320c; /* giver en kant og stroke-farve */
+  border-radius: 5px; /* afrundede hjørner */
+}
+
+/* FAVICON BILLEDE T3 */
+.fav-t3_img {
+  max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
+  height: auto; /* bevarer billedets proportioner. */
+}
+
+/*//////////// SIDE - TEMA 4 - ADOBE ILLUSTRATOR /////////////*/
+
+/* TEKST OG BILLEDE ADOBE ILLUSTRATOR */
+.illustrator {
+  text-align: center;
+  border: 2px solid #58320c; /* giver en kant og stroke-farve */
+  border-radius: 5px; /* afrundede hjørner */
+  margin-bottom: 4rem; /* giver plads mellemdenne og næste sektion */
+}
+
+/* TEKST */
+.tekst {
+  display: block;
+  margin-bottom: 2rem; /* giver luft under tekst og imellem knap */
+}
+
+.illustrator-t4_img {
+  max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
+  height: auto; /* bevarer billedets proportioner. */
+}
+
+/* BESØG TEMA 4 KNAP */
+a.t4-btn {
+  display: inline;
+  border: 2px solid #58320c;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+a.t4-btn:hover {
+  color: #123fa2;
+}
+
+.t4-btn {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 4rem; /* luft mellem knap og tekst */
+}
+
+/*//////////// SIDE - TEMA 4 - JAVASCRIPT /////////////*/
+
+/* TEKST OG BILLEDE ADOBE ILLUSTRATOR */
+.javascript {
+  text-align: center;
+  margin-bottom: 4rem; /* giver plads mellem denne og næste sektion */
+  border: 2px solid #58320c; /* giver en kant og stroke-farve */
+  border-radius: 5px; /* afrundede hjørner */
+}
+
+/* TEKST */
+.tekst {
+  display: block;
+}
+
+.js-t4_img {
+  max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
+  height: auto; /* bevarer billedets proportioner. */
+}
+
+/*//////////// SIDE - TEMA 5 - LOTTIEFILE /////////////*/
+
+/* TEKST OG BILLEDE LOTTIEFILE */
+.lottie-t5_img {
+  max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
+  height: auto; /* bevarer billedets proportioner. */
+}
+
+.lottie-t5 {
+  text-align: center;
+  border: 2px solid #58320c; /* giver en kant og stroke-farve */
+  border-radius: 5px; /* afrundede hjørner */
+  margin-bottom: 4rem; /* giver plads mellem tekst og knap */
+}
+
+/* BESØG TEMA 5 KNAP */
+a.t5-btn {
+  display: inline;
+  border: 2px solid #58320c;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+a.t5-btn:hover {
+  color: #123fa2;
+}
+
+.t5-btn {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 4rem; /* luft mellem knap og tekst */
+}
+
+/*//////////// SIDE - TEMA 5 - REDESIGN OG BILLEDETAGNING /////////////*/
+
+/* TEKST OG BILLEDE / REDESIGN OG BILLEDETAGNING */
+
+.billedetagning-t5_img {
+  max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
+  height: auto; /* bevarer billedets proportioner. */
+}
+
+/* TEKST OG BILLEDE */
+.billedetagning {
+  text-align: center;
+  margin-bottom: 4rem; /* giver plads mellem tekst og knap */
+  border: 2px solid #58320c; /* giver en kant og stroke-farve */
+  border-radius: 5px; /* afrundede hjørner */
+}
+
+/* TEKST */
+.tekst {
+  display: block;
+}
+
+/* FOOTER */
+
+.hide {
+  display: none; /* elementet vises ikke i layoutet. */
+  opacity: 0; /* elementet er helt gennemsigtigt */
+}
+
+/* når denne klasse tilføjes, bliver elementet synligt og får en animation: */
+.fadeIn {
+  display: block; /* elementet vises igen */
+  animation: fadeIn 1s ease forwards; /* 1s: animationen varer 1 sekund. EASE: gør animationen blødere i starten og slutningen. FORWARDS: Betyder, at den endelige stil (opacity 1) bevares bagefter*/
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /*starter helt gennemsigtig */
+  }
+  to {
+    opacity: 1; /*slutter med fuld synlighed*/
+  }
+}
+
+.navn {
+  color: #123fa2;
 }

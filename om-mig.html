@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="generel.css" />
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io_tema6/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io_tema6/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io_tema6/favicon-16x16.png" />
-    <link rel="manifest" href="favicon_io_tema6/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io-2_eksamen/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io-2_eksamen/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io-2_eksamen/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io-2_eksamen/site.webmanifest" />
 
     <title>Om mig</title>
   </head>
-  <body>
+  <body class="forside2">
     <header>
       <nav>
         <ul class="menu">
@@ -35,14 +35,14 @@
       <h2>Her kan du læse om min uddannelses- og erhvervserfaring og lære mig lidt bedre at kende</h2>
 
       <section class="grid-1-2">
-        <div>
+        <div class="mig">
           <img class="mig" src="img/portræt1.jpeg" alt="mig" />
         </div>
 
         <div class="OM-tekst">
           <h3>Min udannelses erfaring</h3>
           <p>
-            Inden jeg startede på multimediedesign i januar 2025, gik jeg på pædagog uddannelsen på Københavns Professionshøjskole - der gik jeg i 1 semster. Da det kke lige var mig - og jeg på forhånd havde overvejet MMD uddannelsen, tog jeg
+            Inden jeg startede på multimediedesign i januar 2025, gik jeg på pædagog uddannelsen på Københavns Professionshøjskole - der gik jeg i 1 semster. Da det ikke lige var mig - og jeg på forhånd havde overvejet MMD uddannelsen, tog jeg
             beslutningen om at søge ind her.
           </p>
 
@@ -52,15 +52,21 @@
             og gav mig mange insights på tøj branchen.
           </p>
 
-          <h3>Mit 1. semester på MMD</h3>
+          <h3>Mit 1. semester på Multimediedesign</h3>
           <p>
-            Mit første semester på mmd uddannelsen har været lærerig. Jeg havde ingen erfaring med kode og minimal viden indenfor web/grafisk design inden jeg startede her. Som helhed er alt hvad vi har arbejdet med ny viden for mig og derfor ny
+            Mit første semester på MMD uddannelsen har været lærerig. Jeg havde ingen erfaring med kode og minimal viden indenfor web/grafisk design inden jeg startede her. Som helhed er alt hvad vi har arbejdet med ny viden for mig og derfor ny
             læring og et langt større indblik indenfor kode og design
           </p>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <!-- id="footer" giver muglighed for at hente footeren i JavaScript-->
+    <!-- id="hide" starter footeren som skjult via CSS (ingen visning og 0 i gennemsigtighed). -->
+    <footer id="footer" class="hide">
+      <p>Manar Jindawi</p>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
