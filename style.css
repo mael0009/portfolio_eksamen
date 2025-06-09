@@ -39,27 +39,6 @@ nav a {
   background-attachment: fixed;
 }
 
-/* FORSIDE - FOOTER (javaScript)*/
-
-#myFooter {
-  position: fixed; /* footeren sidder fast i bunden af vinduet */
-  bottom: 0; /* footeren er helt nede i bunden af skærmen */
-  right: -100%; /* Starter skjult og kommer ind fra højre */
-  width: 100%; /* Den fylder hele bredden af skærmen */
-  background-color: white;
-  color: black;
-  text-align: left;
-  padding: 15px 0; /* Lidt luft inde i boksen (top/bund) */
-  font-size: 20px; /* Skriftstørrelse */
-  transition: right 1s ease-in-out; /* gør så ændring i 'right' sker som en glidende animation over 1 sekund */
-  z-index: 100; /* sørger for at footeren ligger foran andet indhold */
-}
-
-span {
-  color: #123fa2; /*farven på mit navn i footeren*/
-  font-family: "antic";
-}
-
 /*//////////// SIDE - PROJEKTER ////////*/
 
 /* BAGGRUNDSBILLEDE PÅ PROJEKTER*/
@@ -137,6 +116,7 @@ a.blå:hover {
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   margin-bottom: 4rem; /* giver luft mellem denne og den næste sektion */
+  padding: 1rem;
 }
 
 /* TEKST */
@@ -169,6 +149,7 @@ a.t2-btn:hover {
   background-color: white;
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
+  padding: 1rem;
 }
 
 .a_tag-img {
@@ -186,6 +167,7 @@ a.t2-btn:hover {
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   margin-bottom: 4rem;
+  padding: 1rem;
 }
 
 /* TEKST */
@@ -225,12 +207,14 @@ a.t3-btn:hover {
   text-align: center;
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
+  padding: 1rem;
 }
 
 /* FAVICON BILLEDE T3 */
 .fav-t3_img {
   max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
   height: auto; /* bevarer billedets proportioner. */
+  width: 50%;
 }
 
 /*//////////// SIDE - TEMA 4 - ADOBE ILLUSTRATOR /////////////*/
@@ -241,6 +225,7 @@ a.t3-btn:hover {
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   margin-bottom: 4rem; /* giver plads mellemdenne og næste sektion */
+  padding: 1rem;
 }
 
 /* TEKST */
@@ -252,6 +237,7 @@ a.t3-btn:hover {
 .illustrator-t4_img {
   max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
   height: auto; /* bevarer billedets proportioner. */
+  width: 50%; /* 50% af bredden på det originale billede */
 }
 
 /* BESØG TEMA 4 KNAP */
@@ -280,6 +266,7 @@ a.t4-btn:hover {
   margin-bottom: 4rem; /* giver plads mellem denne og næste sektion */
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
+  padding: 1rem;
 }
 
 /* TEKST */
@@ -290,6 +277,7 @@ a.t4-btn:hover {
 .js-t4_img {
   max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
   height: auto; /* bevarer billedets proportioner. */
+  width: 70%; /* 70% af bredden på det originale billedet */
 }
 
 /*//////////// SIDE - TEMA 5 - LOTTIEFILE /////////////*/
@@ -298,6 +286,7 @@ a.t4-btn:hover {
 .lottie-t5_img {
   max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
   height: auto; /* bevarer billedets proportioner. */
+  width: 70%;
 }
 
 .lottie-t5 {
@@ -305,6 +294,7 @@ a.t4-btn:hover {
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   margin-bottom: 4rem; /* giver plads mellem tekst og knap */
+  padding: 1rem;
 }
 
 /* BESØG TEMA 5 KNAP */
@@ -332,6 +322,7 @@ a.t5-btn:hover {
 .billedetagning-t5_img {
   max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
   height: auto; /* bevarer billedets proportioner. */
+  width: 70%; /* 70% af bredden på orginale billede */
 }
 
 /* TEKST OG BILLEDE */
@@ -340,6 +331,7 @@ a.t5-btn:hover {
   margin-bottom: 4rem; /* giver plads mellem tekst og knap */
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
+  padding: 1rem;
 }
 
 /* TEKST */
@@ -347,7 +339,7 @@ a.t5-btn:hover {
   display: block;
 }
 
-/* FOOTER */
+/* FOOTER (JAVASCRIPT)*/
 
 .hide {
   display: none; /* elementet vises ikke i layoutet. */
@@ -378,4 +370,11 @@ a.t5-btn:hover {
 
 .navn {
   color: #123fa2;
+}
+
+.baggrund-t {
+  background-image: url(img/baggrund?.svg);
+  background-size: cover; /*fylder hele baggrunden*/
+  margin: 0;
+  background-repeat: repeat; /*gentager ikke billedet*/
 }
