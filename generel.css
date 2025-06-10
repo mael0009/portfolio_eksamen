@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-  font-family: "antic";
+  font-family: "junge";
 }
 
 p {
@@ -63,7 +63,7 @@ hr {
   main {
     max-width: 800px;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 }
 
@@ -71,6 +71,6 @@ hr {
 
 @media (width<=800px) {
   main {
-    margin-top: 5rem; /* så der ikker er noget der bliver skjult under headeren*/
+    margin-top: 5rem; /* så der ikke er noget der bliver skjult under headeren*/
   }
 }
