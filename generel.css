@@ -41,11 +41,6 @@ a {
   font-family: "open";
 }
 
-main {
-  margin-top: 4rem;
-  /* margin: 0 auto; */
-}
-
 hr {
   color: #58320c;
 }
@@ -68,5 +63,14 @@ hr {
   main {
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 4rem;
+  }
+}
+
+/* MOBIL */
+
+@media (width<=800px) {
+  main {
+    margin-top: 5rem; /* så der ikker er noget der bliver skjult under headeren*/
   }
 }

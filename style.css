@@ -1,5 +1,15 @@
 /*////////// HEADER FOR ALLE SIDER  //////////*/
 
+header {
+  position: fixed;
+  top: 0; /* placerer det helt oppe. */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000; /*  sørger for at header ligger over alt andet. */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .menu {
   list-style: none;
   display: flex;
@@ -28,6 +38,14 @@ nav a {
   transition: 0.3s ease;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
 /*////////////// SIDE - FORSIDE ////////////////*/
 
 /* BAGGRUNDSBILLEDE INDEX*/
@@ -45,6 +63,9 @@ nav a {
 
 .forside2 {
   background-image: url(img/baggrund-grafik8.svg);
+  background-size: cover; /* Fylder hele skærmen */
+  background-repeat: no-repeat; /* Forhindrer gentagelse */
+  background-position: center; /* Centrerer billedet */
 }
 
 /* MAIN */
@@ -110,9 +131,28 @@ a.blå:hover {
 
 /*//////////// SIDE - TEMA 2 - GRID /////////////*/
 
+.t2-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* BESØG TEMA 2 KNAP */
+.t2-btn1 {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid #58320c;
+  border-radius: 5px;
+}
+
+a.t2-btn1:hover {
+  color: #123fa2;
+  transition: 0.3s ease;
+  transform: scale(1.03);
+}
+
 .t2-grid {
   text-align: center;
-  background-color: white;
+  background-color: #f4f1f1;
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   margin-bottom: 4rem; /* giver luft mellem denne og den næste sektion */
@@ -125,9 +165,9 @@ a.blå:hover {
   margin-bottom: 2rem; /* giver luft under tekst og imellem knap */
 }
 
-/* BESØG TEMA 2 KNAP*/
+/* SE GRID KNAP*/
 a.t2-btn {
-  display: inline;
+  display: inline-block;
   background-color: white;
   border: 2px solid #58320c;
   border-radius: 5px;
@@ -135,10 +175,12 @@ a.t2-btn {
 
 a.t2-btn:hover {
   color: #123fa2;
+  transition: 0.3s ease;
+  transform: scale(1.03);
 }
 
 .t2-btn {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -146,7 +188,7 @@ a.t2-btn:hover {
 
 .t2-cta {
   text-align: center;
-  background-color: white;
+  background-color: #f4f1f1;
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   padding: 1rem;
@@ -156,14 +198,34 @@ a.t2-btn:hover {
   max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
   height: auto; /* bevarer billedets proportioner. */
   margin-bottom: 2rem; /* giver plads mellem billede og knap */
+  width: 50%;
 }
 
 /*//////////// SIDE - TEMA 3 - MOODBOARD /////////////*/
 
+.t3-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* BESØG TEMA 3 KNAP */
+.t3-btn1 {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid #58320c;
+  border-radius: 5px;
+}
+
+a.t3-btn1:hover {
+  color: #123fa2;
+  transition: 0.3s ease;
+  transform: scale(1.03);
+}
+
 /* TEKST OG BILLEDE MOODBOARD */
 .moodboard {
   text-align: center;
-  background-color: white;
+  background-color: #f4f1f1;
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   margin-bottom: 4rem;
@@ -176,9 +238,9 @@ a.t2-btn:hover {
   margin-bottom: 2rem; /* giver luft under tekst og imellem knap */
 }
 
-/* BESØG TEMA 3 KNAP */
+/* SE STIL OG TONE PÅ TEMA 3 PROJEKT / SE MIT FAVICON PÅ TEMA 3 PROJEKT */
 a.t3-btn {
-  display: inline;
+  display: inline-block;
   background-color: white;
   border: 2px solid #58320c;
   border-radius: 5px;
@@ -186,12 +248,14 @@ a.t3-btn {
 
 a.t3-btn:hover {
   color: #123fa2;
+  transition: 0.3s ease;
+  transform: scale(1.03);
 }
 
 .t3-btn {
   text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 4rem; /* luft mellem knap og tekst */
+  margin-bottom: 1rem;
+  margin-top: 1rem; /* luft mellem knap og tekst */
 }
 
 /*//////////// SIDE - TEMA 3 - FAVICON /////////////*/
@@ -208,6 +272,7 @@ a.t3-btn:hover {
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   padding: 1rem;
+  background-color: #f4f1f1;
 }
 
 /* FAVICON BILLEDE T3 */
@@ -219,6 +284,25 @@ a.t3-btn:hover {
 
 /*//////////// SIDE - TEMA 4 - ADOBE ILLUSTRATOR /////////////*/
 
+.t4-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* BESØG TEMA 4 KNAP */
+.t4-btn1 {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid #58320c;
+  border-radius: 5px;
+}
+
+a.t4-btn1:hover {
+  color: #123fa2;
+  transition: 0.3s ease;
+  transform: scale(1.03);
+}
+
 /* TEKST OG BILLEDE ADOBE ILLUSTRATOR */
 .illustrator {
   text-align: center;
@@ -226,6 +310,7 @@ a.t3-btn:hover {
   border-radius: 5px; /* afrundede hjørner */
   margin-bottom: 4rem; /* giver plads mellemdenne og næste sektion */
   padding: 1rem;
+  background-color: #f4f1f1;
 }
 
 /* TEKST */
@@ -240,9 +325,9 @@ a.t3-btn:hover {
   width: 50%; /* 50% af bredden på det originale billede */
 }
 
-/* BESØG TEMA 4 KNAP */
+/* SE MIN ILLUSTRATION FRA TEMA 4 KNAP */
 a.t4-btn {
-  display: inline;
+  display: inline-block;
   border: 2px solid #58320c;
   border-radius: 5px;
   margin-top: 2rem;
@@ -250,12 +335,13 @@ a.t4-btn {
 
 a.t4-btn:hover {
   color: #123fa2;
+  transition: 0.3s ease;
+  transform: scale(1.03);
 }
 
 .t4-btn {
   text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 4rem; /* luft mellem knap og tekst */
+  margin-bottom: 1rem;
 }
 
 /*//////////// SIDE - TEMA 4 - JAVASCRIPT /////////////*/
@@ -267,6 +353,7 @@ a.t4-btn:hover {
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   padding: 1rem;
+  background-color: #f4f1f1;
 }
 
 /* TEKST */
@@ -282,6 +369,44 @@ a.t4-btn:hover {
 
 /*//////////// SIDE - TEMA 5 - LOTTIEFILE /////////////*/
 
+.t5-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* BESØG TEMA 5 KNAP EMNESITE */
+
+.t5-btn1 {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid #58320c;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.t5-btn1:hover {
+  color: #123fa2;
+  transition: 0.3s ease;
+  transform: scale(1.03);
+}
+
+/* BESØG TEMA 5 KNAP VIRKSOMHEDSSITE */
+
+.t5-btn2 {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid #58320c;
+  border-radius: 5px;
+
+  margin-top: 1rem;
+}
+
+.t5-btn2:hover {
+  color: #123fa2;
+  transition: 0.3s ease;
+  transform: scale(1.03);
+}
+
 /* TEKST OG BILLEDE LOTTIEFILE */
 .lottie-t5_img {
   max-width: 100%; /* gør aldrig billedet bredere end sit forældre-element. */
@@ -295,24 +420,27 @@ a.t4-btn:hover {
   border-radius: 5px; /* afrundede hjørner */
   margin-bottom: 4rem; /* giver plads mellem tekst og knap */
   padding: 1rem;
+  background-color: #f4f1f1;
 }
 
-/* BESØG TEMA 5 KNAP */
+/* SE MIN LOTTIEFILE TEMA 5*/
 a.t5-btn {
-  display: inline;
+  display: inline-block;
   border: 2px solid #58320c;
+  background-color: white;
   border-radius: 5px;
   margin-top: 2rem;
 }
 
 a.t5-btn:hover {
   color: #123fa2;
+  transition: 0.3s ease;
+  transform: scale(1.03);
 }
 
 .t5-btn {
   text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 4rem; /* luft mellem knap og tekst */
+  margin-bottom: 1rem;
 }
 
 /*//////////// SIDE - TEMA 5 - REDESIGN OG BILLEDETAGNING /////////////*/
@@ -332,6 +460,7 @@ a.t5-btn:hover {
   border: 2px solid #58320c; /* giver en kant og stroke-farve */
   border-radius: 5px; /* afrundede hjørner */
   padding: 1rem;
+  background-color: #f4f1f1;
 }
 
 /* TEKST */
@@ -339,7 +468,7 @@ a.t5-btn:hover {
   display: block;
 }
 
-/* FOOTER (JAVASCRIPT)*/
+/* FOOTER FORSIDE */
 
 .hide {
   display: none; /* elementet vises ikke i layoutet. */
@@ -358,7 +487,7 @@ a.t5-btn:hover {
   border-radius: 10px;
 }
 
-/* */
+/* FOOTER FORSIDE (JAVASCRIPT) */
 @keyframes fadeIn {
   from {
     opacity: 0; /*starter helt gennemsigtig */
@@ -372,9 +501,8 @@ a.t5-btn:hover {
   color: #123fa2;
 }
 
-.baggrund-t {
-  background-image: url(img/baggrund?.svg);
-  background-size: cover; /*fylder hele baggrunden*/
-  margin: 0;
-  background-repeat: repeat; /*gentager ikke billedet*/
+/* FOOTER */
+footer {
+  padding: 1rem;
+  text-align: end;
 }
